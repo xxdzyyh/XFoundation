@@ -58,12 +58,8 @@ class XBaseRequest: NSObject {
     }
     
     class func path(_ path:String,completion:Completion?) -> (XBaseRequest) {
-        let request = XBaseRequest.init()
-        
-        request.completion = completion
-        request.path = path
-        
-        return request
+
+        return XBaseRequest.path(path, parameter: nil, completion: completion)
     }
     
     class func path(_ path:String,parameter:NSDictionary?,completion:Completion?) -> (XBaseRequest) {
@@ -75,7 +71,6 @@ class XBaseRequest: NSObject {
         if parameter != nil {
             request.addParameters(parameters: parameter!)
         }
-        
         
         return request
     }
@@ -90,6 +85,7 @@ class XBaseRequest: NSObject {
             NSLog("domain为空，先设置domain")
         }
         
+        // domain是static变量，子类和父类共享同一个对象，继承后对子类domain赋值就可以
         let url = NSString.init(format: "%@%@", XBaseRequest.domain!,self.path!)
         
         let manager = XBaseRequest.sessionManager
