@@ -1,5 +1,5 @@
 //
-//  XBaseReqeust.swift
+//  XBaseRequest.swift
 //  XFoundation
 //
 //  Created by xiaoniu on 2018/10/22.
@@ -9,17 +9,17 @@
 import UIKit
 import AFNetworking
 
-typealias Completion = (XBaseReqeust,XReqeustResult) -> ();
+typealias Completion = (XBaseRequest,XRequestResult) -> ();
 
-class XBaseReqeust: NSObject {
+class XBaseRequest: NSObject {
     static var domain : String?
+    
+    static var sessionManager = AFHTTPSessionManager.init(baseURL: nil)
+    
     var path : String?
     
-    // 请求结束回调，请求通过队列执行
+    // 请求结束回调
     var completion : Completion?
-    
-    // 请求结束回调，请求没有通过队列执行
-    var finishBlock : Completion?
     
     var isCancel : Bool?
     
@@ -54,11 +54,11 @@ class XBaseReqeust: NSObject {
     //MARK: - 获取数据
     
     func start() {
-        
+        self.execute()
     }
     
-    class func path(path:String,completion:Completion?) -> (XBaseReqeust) {
-        let request = XBaseReqeust.init()
+    class func path(_ path:String,completion:Completion?) -> (XBaseRequest) {
+        let request = XBaseRequest.init()
         
         request.completion = completion
         request.path = path
@@ -66,19 +66,33 @@ class XBaseReqeust: NSObject {
         return request
     }
     
+    class func path(_ path:String,parameter:NSDictionary?,completion:Completion?) -> (XBaseRequest) {
+        let request = XBaseRequest.init()
+        
+        request.completion = completion
+        request.path = path
+        
+        if parameter != nil {
+            request.addParameters(parameters: parameter!)
+        }
+        
+        
+        return request
+    }
+
     func cancel() {
         
     }
     
-    private func execute(completion:Completion?) {
+    private func execute() {
         
-        if XBaseReqeust.domain == nil {
+        if XBaseRequest.domain == nil {
             NSLog("domain为空，先设置domain")
         }
         
-        let url = NSString.init(format: "%@%@", XBaseReqeust.domain!,self.path!)
+        let url = NSString.init(format: "%@%@", XBaseRequest.domain!,self.path!)
         
-        let manager = AFHTTPSessionManager.init()
+        let manager = XBaseRequest.sessionManager
         
         manager.requestSerializer = AFHTTPRequestSerializer.init()
         manager.responseSerializer = AFHTTPResponseSerializer.init()
@@ -95,19 +109,19 @@ class XBaseReqeust: NSObject {
                     if (obj is NSDictionary) {
                         let dict = obj as! NSDictionary
                         
-                        let result = XReqeustResult.init()
+                        let result = XRequestResult.init()
                         
-                        result .configWithDictionary(dictionary: dict)
+                        result.configWithDictionary(dictionary: dict)
                         
                         self.sendCompletion(result: result)
                     } else {
                         // 解析出来不是字典，就是出错了，不用管
-                        let result = XReqeustResult.init()
+                        let result = XRequestResult.init()
                         
                         result.code = -1;
                         result.desc = "发生了未知错误"
                         result.success = false
-                        
+        
                         result.configWithDictionary(dictionary: nil)
                         
                         self.sendCompletion(result: result)
@@ -115,7 +129,7 @@ class XBaseReqeust: NSObject {
 
                 } catch {
                     // 数据无法解析，就是出错了，不用管
-                    let result = XReqeustResult.init()
+                    let result = XRequestResult.init()
                     
                     result.code = -1;
                     result.desc = "发生了未知错误"
@@ -127,7 +141,7 @@ class XBaseReqeust: NSObject {
                 }
             } else {
                 // 请求成功了，但是没有任何数据返回
-                let result = XReqeustResult.init()
+                let result = XRequestResult.init()
                 
                 result.code = 200;
                 result.success = true
@@ -140,7 +154,7 @@ class XBaseReqeust: NSObject {
         let failureBlock = {(task: URLSessionDataTask?,error : NSError) in
             print(error.localizedDescription)
             
-            let result = XReqeustResult.init()
+            let result = XRequestResult.init()
             
             result.code = -1;
             result.desc = error.localizedDescription
@@ -153,11 +167,7 @@ class XBaseReqeust: NSObject {
         manager.post(url as String, parameters: params, progress: nil, success: successBlock, failure : failureBlock as? (URLSessionDataTask?, Error) -> Void)
     }
     
-    private func sendCompletion(result : XReqeustResult) {
-        if (self.finishBlock != nil) {
-            self.finishBlock!(self,result)
-        }
-        
+    private func sendCompletion(result : XRequestResult) {
         if self.completion != nil {
             self.completion!(self,result)
         }

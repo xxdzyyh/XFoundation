@@ -1,5 +1,5 @@
 //
-//  XReqeustResult.swift
+//  XRequestResult.swift
 //  XFoundation
 //
 //  Created by xiaoniu on 2018/10/22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XReqeustResult: NSObject {
+class XRequestResult: NSObject {
     /// 请求成功，返回的证书数据
     var data : Any?
     
