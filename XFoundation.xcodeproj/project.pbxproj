@@ -13,6 +13,7 @@
 		D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A1B217D64F9009A84B6 /* XBaseRequest.swift */; };
 		D44B2A1E217D6D16009A84B6 /* XRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A1D217D6D16009A84B6 /* XRequestResult.swift */; };
 		D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A2221800A02009A84B6 /* XTokenRequest.swift */; };
+		D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A6B21816C35009A84B6 /* XRequestQueue.swift */; };
 		D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C37217821A6001819A4 /* AppDelegate.swift */; };
 		D4599C3A217821A6001819A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C39217821A6001819A4 /* ViewController.swift */; };
 		D4599C3D217821A6001819A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4599C3B217821A6001819A4 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		D44B2A1B217D64F9009A84B6 /* XBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBaseRequest.swift; sourceTree = "<group>"; };
 		D44B2A1D217D6D16009A84B6 /* XRequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRequestResult.swift; sourceTree = "<group>"; };
 		D44B2A2221800A02009A84B6 /* XTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTokenRequest.swift; sourceTree = "<group>"; };
+		D44B2A6B21816C35009A84B6 /* XRequestQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRequestQueue.swift; sourceTree = "<group>"; };
 		D4599C34217821A6001819A4 /* XFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4599C37217821A6001819A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4599C39217821A6001819A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D44B2A1B217D64F9009A84B6 /* XBaseRequest.swift */,
 				D44B2A1D217D6D16009A84B6 /* XRequestResult.swift */,
 				D44B2A2221800A02009A84B6 /* XTokenRequest.swift */,
+				D44B2A6B21816C35009A84B6 /* XRequestQueue.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -138,8 +141,8 @@
 				D4C9B65D2179767B006E947E /* Base */,
 				D4599C492178222B001819A4 /* App */,
 				D4599C37217821A6001819A4 /* AppDelegate.swift */,
-				D4599C39217821A6001819A4 /* ViewController.swift */,
 				D4599C3B217821A6001819A4 /* Main.storyboard */,
+				D4599C39217821A6001819A4 /* ViewController.swift */,
 				D4599C3E217821A7001819A4 /* Assets.xcassets */,
 				D4599C40217821A7001819A4 /* LaunchScreen.storyboard */,
 				D4599C43217821A7001819A4 /* Info.plist */,
@@ -293,6 +296,7 @@
 			files = (
 				D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
+				D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */,
 				D44B2A162179DBA9009A84B6 /* XBaseVC.swift in Sources */,
 				D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */,
 				D44B2A182179DBD2009A84B6 /* XRequestVC.swift in Sources */,

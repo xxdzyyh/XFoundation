@@ -21,7 +21,8 @@ class XBaseRequest: NSObject {
     // 请求结束回调
     var completion : Completion?
     
-    var isCancel : Bool?
+    // 是否请求已经发出，正在进行中
+    var isGoing : Bool?
     
     //MARK: - 参数
     
@@ -54,7 +55,7 @@ class XBaseRequest: NSObject {
     //MARK: - 获取数据
     
     func start() {
-        self.execute()
+        self.execute(finishBlock: nil)
     }
     
     class func path(_ path:String,completion:Completion?) -> (XBaseRequest) {
@@ -79,7 +80,10 @@ class XBaseRequest: NSObject {
         
     }
     
-    private func execute() {
+    /// 发出请求
+    ///
+    /// - Parameter finishBlock: 通知请求队列请求的情况
+    func execute(finishBlock:Completion?) {
         
         if XBaseRequest.domain == nil {
             NSLog("domain为空，先设置domain")
@@ -110,6 +114,10 @@ class XBaseRequest: NSObject {
                         result.configWithDictionary(dictionary: dict)
                         
                         self.sendCompletion(result: result)
+                        
+                        if (finishBlock != nil) {
+                            finishBlock!(self,result)
+                        }
                     } else {
                         // 解析出来不是字典，就是出错了，不用管
                         let result = XRequestResult.init()
@@ -121,6 +129,10 @@ class XBaseRequest: NSObject {
                         result.configWithDictionary(dictionary: nil)
                         
                         self.sendCompletion(result: result)
+                    
+                        if (finishBlock != nil) {
+                            finishBlock!(self,result)
+                        }
                     }
 
                 } catch {
@@ -134,6 +146,10 @@ class XBaseRequest: NSObject {
                     result.configWithDictionary(dictionary: nil)
                     
                     self.sendCompletion(result: result)
+                    
+                    if (finishBlock != nil) {
+                        finishBlock!(self,result)
+                    }
                 }
             } else {
                 // 请求成功了，但是没有任何数据返回
@@ -144,6 +160,10 @@ class XBaseRequest: NSObject {
                 result.configWithDictionary(dictionary: nil)
                 
                 self.sendCompletion(result: result)
+                
+                if (finishBlock != nil) {
+                    finishBlock!(self,result)
+                }
             }
         } 
         
@@ -158,12 +178,18 @@ class XBaseRequest: NSObject {
             result.configWithDictionary(dictionary: nil)
             
             self.sendCompletion(result: result)
+            
+            if (finishBlock != nil) {
+                finishBlock!(self,result)
+            }
         }
        
+        self.isGoing = true
         manager.post(url as String, parameters: params, progress: nil, success: successBlock, failure : failureBlock as? (URLSessionDataTask?, Error) -> Void)
     }
     
     private func sendCompletion(result : XRequestResult) {
+        self.isGoing = false
         if self.completion != nil {
             self.completion!(self,result)
         }
