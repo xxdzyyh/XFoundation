@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: XRequestVC {
+class ViewController: XTableViewVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-
+        
+        self.dataSource = ["1","2","3"]
     }
 
 

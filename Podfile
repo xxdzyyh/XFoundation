@@ -17,5 +17,6 @@ target 'XFoundation' do
    pod 'UMengAnalytics-NO-IDFA'
    pod 'SDCycleScrollView'
    pod 'Bugly'
-
+   pod 'SnapKit'
+   
 end

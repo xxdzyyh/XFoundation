@@ -8,29 +8,10 @@
 
 import UIKit
 
+import SVProgressHUD
+
 /// 和网络请求有关的试图控制器的基类
 class XRequestVC: XBaseVC, XRequestQueueDelegate {
-    func someRequestStart(queue: XRequestQueue) {
-        if (queue.isEqual(self.mainQueue)) {
-            // 显示进度
-        }
-    }
-    
-    func requestSuccess(queue: XRequestQueue, request: XBaseRequest, result: XRequestResult) {
-        
-    }
-    
-    func requestFailure(queue: XRequestQueue, request: XBaseRequest, result: XRequestResult) -> Bool {
-        if (queue.isEqual(self.mainQueue)) {
-            return true
-        } else {
-            return false
-        }  
-    }
-    
-    func allRequestFinished(queue: XRequestQueue) {
-        
-    }
 
     /**
         将请求放到这个队列，可以自动显示/隐藏 Loading
@@ -50,7 +31,6 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         self.mainQueue.delegate = self
         self.otherQueue.delegate = self
@@ -74,4 +54,53 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
         self.mainQueue.push(req)
     }
     
+    //MARK: - XRequestQueueDelegate
+    
+    func someRequestStart(queue: XRequestQueue) {
+        if (queue.isEqual(self.mainQueue)) {
+            // 显示进度
+            self.showLoadingView()
+        } else {
+            
+        }
+    }
+    
+    func requestSuccess(queue: XRequestQueue, request: XBaseRequest, result: XRequestResult) {
+        
+    }
+    
+    func requestFailure(queue: XRequestQueue, request: XBaseRequest, result: XRequestResult) -> Bool {
+        if (queue.isEqual(self.mainQueue)) {
+            return true
+        } else {
+            return false
+        }  
+    }
+    
+    func allRequestFinished(queue: XRequestQueue) {
+        if (queue.isEqual(self.mainQueue)) {
+            self.hideLoadingView()
+        }
+    }
+
+    //MARK: - 加载指示器
+    var activityIndicatorView : UIActivityIndicatorView?
+    
+    var loadingView : XLoadingView = XLoadingView.init()
+    
+    func setupLoading() {
+        SVProgressHUD.setMinimumDismissTimeInterval(1.5)
+        SVProgressHUD.setDefaultStyle(.dark)
+        SVProgressHUD.setDefaultMaskType(.clear)
+    }
+    
+    /// 显示加载中菊花
+    func showLoadingView() {
+        self.view.addSubview(self.loadingView)
+    }
+    
+    /// 隐藏加载中菊花
+    func hideLoadingView() {
+        self.loadingView.removeFromSuperview()
+    }
 }

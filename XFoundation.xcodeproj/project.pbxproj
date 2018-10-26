@@ -14,6 +14,10 @@
 		D44B2A1E217D6D16009A84B6 /* XRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A1D217D6D16009A84B6 /* XRequestResult.swift */; };
 		D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A2221800A02009A84B6 /* XTokenRequest.swift */; };
 		D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A6B21816C35009A84B6 /* XRequestQueue.swift */; };
+		D44B2A6F2182B881009A84B6 /* XTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A6E2182B881009A84B6 /* XTipView.swift */; };
+		D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A74218303B5009A84B6 /* XLoadingView.swift */; };
+		D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7721830834009A84B6 /* XTableViewVC.swift */; };
+		D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */; };
 		D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C37217821A6001819A4 /* AppDelegate.swift */; };
 		D4599C3A217821A6001819A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C39217821A6001819A4 /* ViewController.swift */; };
 		D4599C3D217821A6001819A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4599C3B217821A6001819A4 /* Main.storyboard */; };
@@ -41,6 +45,10 @@
 		D44B2A1D217D6D16009A84B6 /* XRequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRequestResult.swift; sourceTree = "<group>"; };
 		D44B2A2221800A02009A84B6 /* XTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTokenRequest.swift; sourceTree = "<group>"; };
 		D44B2A6B21816C35009A84B6 /* XRequestQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRequestQueue.swift; sourceTree = "<group>"; };
+		D44B2A6E2182B881009A84B6 /* XTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTipView.swift; sourceTree = "<group>"; };
+		D44B2A74218303B5009A84B6 /* XLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLoadingView.swift; sourceTree = "<group>"; };
+		D44B2A7721830834009A84B6 /* XTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTableViewVC.swift; sourceTree = "<group>"; };
+		D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTableViewCell.swift; sourceTree = "<group>"; };
 		D4599C34217821A6001819A4 /* XFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4599C37217821A6001819A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4599C39217821A6001819A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,24 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		D44B2A732183038F009A84B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D44B2A6E2182B881009A84B6 /* XTipView.swift */,
+				D44B2A74218303B5009A84B6 /* XLoadingView.swift */,
+				D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D44B2A7621830766009A84B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D44B2A7721830834009A84B6 /* XTableViewVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D4599C2B217821A6001819A4 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +187,8 @@
 		D4C9B65D2179767B006E947E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D44B2A7621830766009A84B6 /* Controller */,
+				D44B2A732183038F009A84B6 /* View */,
 				D4C9B65E217976A0006E947E /* XAppDelegate.swift */,
 				D44B2A152179DBA9009A84B6 /* XBaseVC.swift */,
 				D44B2A172179DBD2009A84B6 /* XRequestVC.swift */,
@@ -270,6 +298,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -281,6 +310,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -296,6 +326,8 @@
 			files = (
 				D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
+				D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */,
+				D44B2A6F2182B881009A84B6 /* XTipView.swift in Sources */,
 				D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */,
 				D44B2A162179DBA9009A84B6 /* XBaseVC.swift in Sources */,
 				D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */,
@@ -303,6 +335,8 @@
 				D4599C3A217821A6001819A4 /* ViewController.swift in Sources */,
 				D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */,
 				D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */,
+				D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */,
+				D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */,
 				D44B2A1E217D6D16009A84B6 /* XRequestResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
