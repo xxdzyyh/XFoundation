@@ -28,4 +28,15 @@ class XLoadingView: XTipView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        
+        if (self.superview != nil) {
+            self.indicatorView.startAnimating()
+        } else {
+            self.indicatorView.stopAnimating()
+        }
+    }
+    
 }

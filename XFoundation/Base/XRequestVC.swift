@@ -36,22 +36,15 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
         self.otherQueue.delegate = self
         // Do any additional setup after loading the view.
         
-        self.sendRequest()
+        // 一般进入页面会发送一个请求
+        self.sendRequest(self.mainQueue)
     }
     
-    func sendRequest() {
+    /// 子类重写，发送页面主要请求，一般一个页面只有一个请求，但是有可能有多个，这个将一个作为默认
+    ///
+    /// - Parameter queue: 请求进行的队列
+    func sendRequest(_ queue:XRequestQueue) {
         
-        XBaseRequest.domain = "http://www.baidu.com"
-        XTokenRequest.domain = "http://39.108.222.73:8080"
-        
-        let req = XTokenRequest.path("/qd_api/api/guideInfo/open/login", completion:{(req,res) in 
-            print(res)
-        })
-        
-        req.addParameter(key: "tel", value: "15118174201")
-        req.addParameter(key: "password", value: "123456")
-        
-        self.mainQueue.push(req)
     }
     
     //MARK: - XRequestQueueDelegate

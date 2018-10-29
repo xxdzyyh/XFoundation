@@ -15,7 +15,13 @@ import MJRefresh
 
 class App: NSObject {
     
-    //MARK:UI定制 -
+    /// 单例
+    static let sharedApp = App()
+    private override init() {
+        
+    }
+
+    //MARK: - UI定制 
     
     //MARK:主题颜色
     var themeColor:UIColor = {
@@ -40,13 +46,13 @@ class App: NSObject {
     var noNetworkTitle : String?
     var noNetworkImage : String?
     
-    // 刷新
-    var refreshHeader = {
+    // 刷新    
+    static func refreshHeader() -> (MJRefreshHeader) {
         return MJRefreshNormalHeader.init()
     }
-
-    var refreshFooter = {
-        return MJRefreshAutoFooter.init()
+    
+    static func refreshFooter() -> (MJRefreshFooter) {
+        return MJRefreshBackNormalFooter.init()
     }
     
     //MARK:第三方 -
@@ -54,3 +60,8 @@ class App: NSObject {
     var buglykey : String?
 
 }
+
+
+ 
+
+

@@ -18,6 +18,8 @@
 		D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A74218303B5009A84B6 /* XLoadingView.swift */; };
 		D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7721830834009A84B6 /* XTableViewVC.swift */; };
 		D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */; };
+		D44B2A7C2186971B009A84B6 /* XRefreshTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7B2186971B009A84B6 /* XRefreshTableViewVC.swift */; };
+		D44B2A7F21869F7E009A84B6 /* XRuntimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44B2A7E21869F7E009A84B6 /* XRuntimeHelper.swift */; };
 		D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C37217821A6001819A4 /* AppDelegate.swift */; };
 		D4599C3A217821A6001819A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4599C39217821A6001819A4 /* ViewController.swift */; };
 		D4599C3D217821A6001819A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4599C3B217821A6001819A4 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		D44B2A74218303B5009A84B6 /* XLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLoadingView.swift; sourceTree = "<group>"; };
 		D44B2A7721830834009A84B6 /* XTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTableViewVC.swift; sourceTree = "<group>"; };
 		D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTableViewCell.swift; sourceTree = "<group>"; };
+		D44B2A7B2186971B009A84B6 /* XRefreshTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XRefreshTableViewVC.swift; path = /Users/xiaoniu/Workspace/XFoundation/XFoundation/Base/Controller/XRefreshTableViewVC.swift; sourceTree = "<absolute>"; };
+		D44B2A7E21869F7E009A84B6 /* XRuntimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRuntimeHelper.swift; sourceTree = "<group>"; };
 		D4599C34217821A6001819A4 /* XFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4599C37217821A6001819A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4599C39217821A6001819A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +142,17 @@
 			isa = PBXGroup;
 			children = (
 				D44B2A7721830834009A84B6 /* XTableViewVC.swift */,
+				D44B2A7B2186971B009A84B6 /* XRefreshTableViewVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D44B2A7D21869F5B009A84B6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D44B2A7E21869F7E009A84B6 /* XRuntimeHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		D4599C2B217821A6001819A4 = {
@@ -187,6 +200,7 @@
 		D4C9B65D2179767B006E947E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D44B2A7D21869F5B009A84B6 /* Helper */,
 				D44B2A7621830766009A84B6 /* Controller */,
 				D44B2A732183038F009A84B6 /* View */,
 				D4C9B65E217976A0006E947E /* XAppDelegate.swift */,
@@ -330,10 +344,12 @@
 				D44B2A6F2182B881009A84B6 /* XTipView.swift in Sources */,
 				D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */,
 				D44B2A162179DBA9009A84B6 /* XBaseVC.swift in Sources */,
+				D44B2A7C2186971B009A84B6 /* XRefreshTableViewVC.swift in Sources */,
 				D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */,
 				D44B2A182179DBD2009A84B6 /* XRequestVC.swift in Sources */,
 				D4599C3A217821A6001819A4 /* ViewController.swift in Sources */,
 				D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */,
+				D44B2A7F21869F7E009A84B6 /* XRuntimeHelper.swift in Sources */,
 				D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */,
 				D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */,
 				D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */,

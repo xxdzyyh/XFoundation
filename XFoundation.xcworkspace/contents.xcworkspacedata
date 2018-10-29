@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/xiaoniu/Workspace/XFoundation/XFoundation/Base/Controller/XRefreshTableViewVC.swift">
+   </FileRef>
+   <FileRef
       location = "group:XFoundation.xcodeproj">
    </FileRef>
    <FileRef
