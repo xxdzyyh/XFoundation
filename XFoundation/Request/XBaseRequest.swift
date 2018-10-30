@@ -49,7 +49,28 @@ class XBaseRequest: NSObject {
             self.params = NSMutableDictionary.init()
         }
         
-        self.params!.setDictionary(params as! [AnyHashable : Any])
+        self.params!.addEntries(from: params as! [AnyHashable : Any])
+    }
+    
+    //MARK: 公共参数
+    /// 公共参数，很多时候会在请求的参数里添加一些的通用的参数方便需要的使用，
+    /// 比如平台信息、设备信息、应用版本、网络状况
+    static var publicParameters: NSMutableDictionary?
+    
+    func addPublicParameter(key:String,value:Any?) -> () {
+        if XBaseRequest.publicParameters == nil  {
+            XBaseRequest.publicParameters = NSMutableDictionary.init()
+        }
+        
+        XBaseRequest.publicParameters?.setValue(value, forKey: key)
+    }
+
+    func addPublicParameters(parameters:NSDictionary) {
+        if XBaseRequest.publicParameters == nil {
+            XBaseRequest.publicParameters = NSMutableDictionary.init()
+        }
+        
+        XBaseRequest.publicParameters?.addEntries(from: parameters as! [AnyHashable : Any])
     }
     
     //MARK: - 获取数据
@@ -185,7 +206,18 @@ class XBaseRequest: NSObject {
         }
        
         self.isGoing = true
-        manager.post(url as String, parameters: params, progress: nil, success: successBlock, failure : failureBlock as? (URLSessionDataTask?, Error) -> Void)
+        
+        let finalParameters : NSMutableDictionary = NSMutableDictionary.init()
+
+        if XBaseRequest.publicParameters?.count ?? 0 > 0 {
+            finalParameters.addEntries(from: XBaseRequest.publicParameters as! [AnyHashable : Any])
+        } 
+        
+        if self.params?.count ?? 0 > 0 {
+            finalParameters.addEntries(from: self.params as! [AnyHashable : Any])
+        }
+      
+        manager.post(url as String, parameters: finalParameters, progress: nil, success: successBlock, failure : failureBlock as? (URLSessionDataTask?, Error) -> Void)
     }
     
     private func sendCompletion(result : XRequestResult) {

@@ -70,7 +70,5 @@ class XRefreshTableViewVC: XTableViewVC {
         
         self.canAppend = true
         self.canUpdate = true
-
-        // Do any additional setup after loading the view.
     }
 }
