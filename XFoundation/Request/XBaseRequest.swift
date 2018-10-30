@@ -213,6 +213,7 @@ class XBaseRequest: NSObject {
             finalParameters.addEntries(from: XBaseRequest.publicParameters as! [AnyHashable : Any])
         } 
         
+        // 这里允许私有参数覆盖公共参数，所以后添加私有参数
         if self.params?.count ?? 0 > 0 {
             finalParameters.addEntries(from: self.params as! [AnyHashable : Any])
         }
