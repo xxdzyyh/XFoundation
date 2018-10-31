@@ -9,6 +9,7 @@
 import UIKit
 
 import SVProgressHUD
+import SnapKit
 
 /// 和网络请求有关的试图控制器的基类
 class XRequestVC: XBaseVC, XRequestQueueDelegate {
@@ -81,6 +82,7 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
     
     var loadingView : XLoadingView = XLoadingView.init()
     
+    
     func setupLoading() {
         SVProgressHUD.setMinimumDismissTimeInterval(1.5)
         SVProgressHUD.setDefaultStyle(.dark)
@@ -90,6 +92,10 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
     /// 显示加载中菊花
     func showLoadingView() {
         self.view.addSubview(self.loadingView)
+        
+        self.loadingView.snp.remakeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
     
     /// 隐藏加载中菊花

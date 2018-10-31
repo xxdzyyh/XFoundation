@@ -26,5 +26,9 @@ class XRequestResult: NSObject {
     /// - Parameter dictionary: 请求到原始的json数据转成的字典，还没有解析过
     func configWithDictionary( dictionary : NSDictionary?) {
         self.data = dictionary
+        
+        if dictionary != nil {
+            self.success = true
+        }
     }
 }

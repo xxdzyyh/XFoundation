@@ -34,6 +34,8 @@
 		D4599C5921788D70001819A4 /* SDCycleScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4599C5821788D70001819A4 /* SDCycleScrollView.framework */; };
 		D4599C5B21788D70001819A4 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4599C5A21788D70001819A4 /* SDWebImage.framework */; };
 		D4599C5D21788D70001819A4 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4599C5C21788D70001819A4 /* SVProgressHUD.framework */; };
+		D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */; };
+		D468CDFE218855C0003BE1D5 /* XSimpleTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */; };
 		D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B65E217976A0006E947E /* XAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		D4599C5821788D70001819A4 /* SDCycleScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4599C5A21788D70001819A4 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4599C5C21788D70001819A4 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDemoVC.swift; sourceTree = "<group>"; };
+		D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimpleTableViewVC.swift; sourceTree = "<group>"; };
 		D4C9B65E217976A0006E947E /* XAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 			children = (
 				D44B2A7721830834009A84B6 /* XTableViewVC.swift */,
 				D44B2A7B2186971B009A84B6 /* XRefreshTableViewVC.swift */,
+				D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 		D468CDFA218842A5003BE1D5 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			files = (
 				D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
+				D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */,
 				D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */,
 				D44B2A6F2182B881009A84B6 /* XTipView.swift in Sources */,
 				D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */,
@@ -362,6 +369,7 @@
 				D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */,
 				D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */,
 				D44B2A1E217D6D16009A84B6 /* XRequestResult.swift in Sources */,
+				D468CDFE218855C0003BE1D5 /* XSimpleTableViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
