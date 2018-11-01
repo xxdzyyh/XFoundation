@@ -36,6 +36,8 @@
 		D4599C5D21788D70001819A4 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4599C5C21788D70001819A4 /* SVProgressHUD.framework */; };
 		D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */; };
 		D468CDFE218855C0003BE1D5 /* XSimpleTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */; };
+		D468CE0021895163003BE1D5 /* XDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFF21895163003BE1D5 /* XDateExtension.swift */; };
+		D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CE012189540F003BE1D5 /* DateExDemoVC.swift */; };
 		D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B65E217976A0006E947E /* XAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		D4599C5C21788D70001819A4 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDemoVC.swift; sourceTree = "<group>"; };
 		D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimpleTableViewVC.swift; sourceTree = "<group>"; };
+		D468CDFF21895163003BE1D5 /* XDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDateExtension.swift; sourceTree = "<group>"; };
+		D468CE012189540F003BE1D5 /* DateExDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExDemoVC.swift; sourceTree = "<group>"; };
 		D4C9B65E217976A0006E947E /* XAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +149,8 @@
 		D44B2A7621830766009A84B6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D44B2A152179DBA9009A84B6 /* XBaseVC.swift */,
+				D44B2A172179DBD2009A84B6 /* XRequestVC.swift */,
 				D44B2A7721830834009A84B6 /* XTableViewVC.swift */,
 				D44B2A7B2186971B009A84B6 /* XRefreshTableViewVC.swift */,
 				D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */,
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				D44B2A7E21869F7E009A84B6 /* XRuntimeHelper.swift */,
+				D468CDFF21895163003BE1D5 /* XDateExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -207,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */,
+				D468CE012189540F003BE1D5 /* DateExDemoVC.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -218,8 +226,6 @@
 				D44B2A7621830766009A84B6 /* Controller */,
 				D44B2A732183038F009A84B6 /* View */,
 				D4C9B65E217976A0006E947E /* XAppDelegate.swift */,
-				D44B2A152179DBA9009A84B6 /* XBaseVC.swift */,
-				D44B2A172179DBD2009A84B6 /* XRequestVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D468CE0021895163003BE1D5 /* XDateExtension.swift in Sources */,
 				D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
 				D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */,
@@ -365,6 +372,7 @@
 				D4599C3A217821A6001819A4 /* ViewController.swift in Sources */,
 				D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */,
 				D44B2A7F21869F7E009A84B6 /* XRuntimeHelper.swift in Sources */,
+				D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */,
 				D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */,
 				D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */,
 				D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */,

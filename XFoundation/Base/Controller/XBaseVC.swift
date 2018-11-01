@@ -16,6 +16,9 @@ class XBaseVC: UIViewController {
         
         self.view.backgroundColor = UIColor.white
     }
-
     
+    deinit {
+        print("\(type(of: self)) deinit")
+    }
+
 }

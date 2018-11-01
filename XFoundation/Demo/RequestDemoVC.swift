@@ -19,7 +19,7 @@ class RequestDemoVC: XRequestVC {
     override func sendRequest(_ queue: XRequestQueue) {
     
         XBaseRequest.domain = "http://www.baidu.com"
-        XTokenRequest.domain = "http://39.108.222.73:8080"
+        XTokenRequest.domain = "http://123.123.123.123:8080"
         XBaseRequest.publicParameters = ["term" : "ios"]
         
         let req = XTokenRequest.path("/qd_api/api/guideInfo/open/login", completion:{(req,res) in 

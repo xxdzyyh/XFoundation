@@ -14,7 +14,8 @@ class ViewController: XSimpleTableViewVC {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.dataSource = [[kType:ActionType.Controller,kDesc:"请求数据",kValue:"RequestDemoVC"]]
+        self.dataSource = [[kType:ActionType.Controller,kDesc:"请求数据",kValue:"RequestDemoVC"],
+        [kType:ActionType.Controller,kDesc:"日期处理",kValue:"DateExDemoVC"]]
     }
 
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+// @objc protocol XRequestQueueDelegate { }
 // 为什么要加@objc
 // 因为 Swift 的 protocol 是可以除了 class 以外的其他类型遵守的，
 // 而对于像 struct 或是 enum 这样的类型，本身就不通过引用计数来管理内存，
@@ -15,7 +16,9 @@ import UIKit
 // 想要在 Swift 中使用 weak delegate，我们就需要将 protocol 限制在 class 内。
 // 一种做法是将 protocol 声明为 Objective-C 的，这可以通过在 protocol 前面加上 @objc 关键字来达到，
 // Objective-C 的 protocol 都只有类能实现，因此使用 weak 来修饰就合理了
-@objc protocol XRequestQueueDelegate {
+// 
+// 协议后面添加class，表明这个协议只能由class来实现
+protocol XRequestQueueDelegate : class {
         
     /// 队列中有请求开始的，开始显示加载进度
     ///

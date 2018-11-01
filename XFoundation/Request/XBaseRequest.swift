@@ -117,7 +117,7 @@ class XBaseRequest: NSObject {
         
         manager.requestSerializer = AFHTTPRequestSerializer.init()
         manager.responseSerializer = AFHTTPResponseSerializer.init()
-        manager.responseSerializer.acceptableContentTypes = NSSet.init(array: ["application/json"]) as? Set<String>
+        manager.responseSerializer.acceptableContentTypes = NSSet.init(array: ["application/json","text/plain"]) as? Set<String>
         manager.requestSerializer.timeoutInterval = 30.0
         
         let successBlock = {(task: URLSessionDataTask,responseObj: Any?) in 
@@ -189,7 +189,7 @@ class XBaseRequest: NSObject {
         } 
         
         let failureBlock = {(task: URLSessionDataTask?,error : NSError) in
-            print(error.localizedDescription)
+            print(error)
             
             let result = XRequestResult.init()
             
