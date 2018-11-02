@@ -15,6 +15,7 @@ class XBaseVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.white
+        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
     }
     
     deinit {

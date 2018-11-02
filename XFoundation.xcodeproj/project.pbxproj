@@ -38,6 +38,8 @@
 		D468CDFE218855C0003BE1D5 /* XSimpleTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */; };
 		D468CE0021895163003BE1D5 /* XDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFF21895163003BE1D5 /* XDateExtension.swift */; };
 		D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CE012189540F003BE1D5 /* DateExDemoVC.swift */; };
+		D4854786218AE1C5001B490B /* XTopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854785218AE1C5001B490B /* XTopTabBar.swift */; };
+		D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */; };
 		D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B65E217976A0006E947E /* XAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimpleTableViewVC.swift; sourceTree = "<group>"; };
 		D468CDFF21895163003BE1D5 /* XDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDateExtension.swift; sourceTree = "<group>"; };
 		D468CE012189540F003BE1D5 /* DateExDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExDemoVC.swift; sourceTree = "<group>"; };
+		D4854785218AE1C5001B490B /* XTopTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
+		D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDemoVC.swift; sourceTree = "<group>"; };
 		D4C9B65E217976A0006E947E /* XAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +192,7 @@
 		D4599C36217821A6001819A4 /* XFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				D4854784218AE199001B490B /* View */,
 				D468CDFA218842A5003BE1D5 /* Demo */,
 				D44B2A19217D63D1009A84B6 /* Request */,
 				D4C9B65D2179767B006E947E /* Base */,
@@ -215,8 +220,17 @@
 			children = (
 				D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */,
 				D468CE012189540F003BE1D5 /* DateExDemoVC.swift */,
+				D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		D4854784218AE199001B490B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4854785218AE1C5001B490B /* XTopTabBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D4C9B65D2179767B006E947E /* Base */ = {
@@ -360,6 +374,7 @@
 			files = (
 				D468CE0021895163003BE1D5 /* XDateExtension.swift in Sources */,
 				D44B2A1C217D64F9009A84B6 /* XBaseRequest.swift in Sources */,
+				D4854786218AE1C5001B490B /* XTopTabBar.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
 				D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */,
 				D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */,
@@ -374,6 +389,7 @@
 				D44B2A7F21869F7E009A84B6 /* XRuntimeHelper.swift in Sources */,
 				D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */,
 				D44B2A2321800A02009A84B6 /* XTokenRequest.swift in Sources */,
+				D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */,
 				D44B2A75218303B5009A84B6 /* XLoadingView.swift in Sources */,
 				D44B2A7821830834009A84B6 /* XTableViewVC.swift in Sources */,
 				D44B2A1E217D6D16009A84B6 /* XRequestResult.swift in Sources */,

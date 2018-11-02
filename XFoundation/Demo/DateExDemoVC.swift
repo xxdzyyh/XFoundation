@@ -10,6 +10,10 @@ import UIKit
 
 class DateExDemoVC: XBaseVC {
 
+    struct Temp {
+        static var top: Double = 100.0
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,12 +29,14 @@ class DateExDemoVC: XBaseVC {
         self.addLabel(text: "let string = \"2018-10-31 12:30:21\" \nlet time2 = \"2018-10-31 12:32:31\"\nlet date2 = Date.date(defaultFormatTime: time2)\ndate2?.liveTimeAgo(time: string) \n\(res2!)")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        Temp.top = 100.0
+    }
+    
     func addLabel(text:String) {
-        
-        struct Temp {
-            static var top: Double = 100.0
-        }
-        
+                
         let label = UILabel.init()
         
         label.font = UIFont.systemFont(ofSize: 12)
