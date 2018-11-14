@@ -30,6 +30,11 @@ class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
         self.tableView.dataSource = self
     }
     
+    //MARK: - subclass need override
+    func cellClass() -> AnyClass? {
+        return XTableViewCell.self
+    }
+    
     //MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +43,14 @@ class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        if self.cellClass() != nil {
+            let className: String = NSStringFromClass(self.cellClass()!)
+            
+            if let classType = NSClassFromString(className) as? XTableViewCell.Type {
+                return classType.cellForTableView(tableView)
+            }
+        }
+                        
         return XTableViewCell.cellForTableView(tableView)
     }
     

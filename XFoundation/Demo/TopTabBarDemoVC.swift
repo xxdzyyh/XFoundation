@@ -26,7 +26,7 @@ class TopTabBarDemoVC: XBaseVC,XTopTabBarDelegate {
             let w = self.view.bounds.size.width
             
             vc.view.frame = CGRect(x: CGFloat(i) * w, y: 0.0, width: w, height: (self.view.bounds.size.height - 45))
-            vc.view.backgroundColor = UIColor.init(red: CGFloat(Double(30*i)/255.0), green: CGFloat(Double(30*i)/255.0), blue: CGFloat(Double(10*i)/255.0), alpha: 1)
+            vc.view.backgroundColor = UIColor.init(red: CGFloat(Double(60*i+30)/255.0), green: CGFloat(Double(30*i+30)/255.0), blue: CGFloat(Double(10*i+60)/255.0), alpha: 1)
             
             self.scrollView.addSubview(vc.view)
         } 

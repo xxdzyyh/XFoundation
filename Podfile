@@ -12,11 +12,12 @@ target 'XFoundation' do
    pod 'MBProgressHUD'
    pod 'MJRefresh'
    pod 'Masonry'
-   pod 'ChameleonFramework'
+#   pod 'ChameleonFramework/Swift'
    # 友盟统计
    pod 'UMengAnalytics-NO-IDFA'
    pod 'SDCycleScrollView'
    pod 'Bugly'
    pod 'SnapKit'
+   
    
 end
