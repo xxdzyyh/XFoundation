@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XFoundation"
   s.version      = "0.0.1"
-  s.summary      = ""
+  s.summary      = "XF.....迅速的开发简单的应用,迅速的开发简单的应用,迅速的开发简单的应用"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                    迅速的开发简单的应用,迅速的开发简单的应用,迅速的开发简单的应用
                    DESC
 
   s.homepage     = "https://github.com/xxdzyyh/XFoundation"
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT (xxdzyyh)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "xxdzyyh" => "email@address.com" }
+  s.author             = { "xxdzyyh" => "591392966@qq.com" }
   # Or just: s.author    = "xxdzyyh"
   # s.authors            = { "xxdzyyh" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/xxdzyyh"
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xxdzyyh/XFoundation.git", :commit => "d22c3d4aaad685ce8ca31e4da14936ec35cedabe" }
+  s.source       = { :git => "https://github.com/xxdzyyh/XFoundation.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,6 +92,23 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
+
+  s.subspec 'Base' do |spec| 
+    spec.source_files = 'Base/*'
+  end
+
+  s.subspec 'Request' do |spec|
+    spec.source_files = 'Request/**/*'
+  end
+
+  s.subspec 'View' do |spec| 
+    spec.source_files = 'View/*'
+  end
+
+  s.subspec 'App' do |spec| 
+    spec.source_files = 'App/*'
+  end
+
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
