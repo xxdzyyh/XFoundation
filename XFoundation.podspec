@@ -94,19 +94,19 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
 
   s.subspec 'Base' do |spec| 
-    spec.source_files = 'Base/*'
+    spec.source_files = 'XFoundation/Base/*'
   end
 
   s.subspec 'Request' do |spec|
-    spec.source_files = 'Request/**/*'
+    spec.source_files = 'XFoundation/Request/**/*'
   end
 
   s.subspec 'View' do |spec| 
-    spec.source_files = 'View/*'
+    spec.source_files = 'XFoundation/View/*'
   end
 
   s.subspec 'App' do |spec| 
-    spec.source_files = 'App/*'
+    spec.source_files = 'XFoundation/App/*'
   end
 
   s.exclude_files = "Classes/Exclude"
