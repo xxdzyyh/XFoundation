@@ -40,6 +40,7 @@
 		D478F81221927FF500021B89 /* XColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D478F81121927FF500021B89 /* XColorExtension.swift */; };
 		D4854786218AE1C5001B490B /* XTopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854785218AE1C5001B490B /* XTopTabBar.swift */; };
 		D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */; };
+		D4B5D2D821E341130082BB81 /* XInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B5D2D721E341130082BB81 /* XInsetLabel.swift */; };
 		D4C9B65F217976A0006E947E /* XAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B65E217976A0006E947E /* XAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		D478F81121927FF500021B89 /* XColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XColorExtension.swift; sourceTree = "<group>"; };
 		D4854785218AE1C5001B490B /* XTopTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
 		D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDemoVC.swift; sourceTree = "<group>"; };
+		D4B5D2D721E341130082BB81 /* XInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XInsetLabel.swift; sourceTree = "<group>"; };
 		D4C9B65E217976A0006E947E /* XAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				D44B2A6E2182B881009A84B6 /* XTipView.swift */,
 				D44B2A74218303B5009A84B6 /* XLoadingView.swift */,
 				D44B2A7921830ECA009A84B6 /* XTableViewCell.swift */,
+				D4B5D2D721E341130082BB81 /* XInsetLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */,
 				D44B2A7A21830ECA009A84B6 /* XTableViewCell.swift in Sources */,
 				D44B2A6F2182B881009A84B6 /* XTipView.swift in Sources */,
+				D4B5D2D821E341130082BB81 /* XInsetLabel.swift in Sources */,
 				D44B2A6C21816C35009A84B6 /* XRequestQueue.swift in Sources */,
 				D44B2A162179DBA9009A84B6 /* XBaseVC.swift in Sources */,
 				D44B2A7C2186971B009A84B6 /* XRefreshTableViewVC.swift in Sources */,

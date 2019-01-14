@@ -18,6 +18,6 @@ target 'XFoundation' do
    pod 'SDCycleScrollView'
    pod 'Bugly'
    pod 'SnapKit'
-   
+   pod 'SAMKeychain'
    
 end
