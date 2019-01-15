@@ -13,7 +13,7 @@
 import UIKit
 import MJRefresh
 
-class App: NSObject {
+public class App: NSObject {
     
     /// 单例
     static let sharedApp = App()

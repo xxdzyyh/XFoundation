@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Date {
+public extension Date {
     
     /// "yyyy-MM-dd HH:mm:ss" -> "yyyy年MM月dd日"
     ///

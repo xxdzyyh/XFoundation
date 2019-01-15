@@ -11,7 +11,7 @@ import AFNetworking
 
 typealias Completion = (XBaseRequest,XRequestResult) -> ();
 
-class XBaseRequest: NSObject {
+public class XBaseRequest: NSObject {
     static var domain : String?
     
     static var sessionManager = AFHTTPSessionManager.init(baseURL: nil)

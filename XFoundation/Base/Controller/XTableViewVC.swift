@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
+open class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
     
     var dataSource : NSMutableArray? {
         didSet {
@@ -17,7 +17,7 @@ class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
         } 
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addSubview(self.tableView)
@@ -37,11 +37,11 @@ class XTableViewVC: XRequestVC,UITableViewDelegate,UITableViewDataSource {
     
     //MARK: - UITableViewDataSource
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource?.count ?? 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if self.cellClass() != nil {
             let className: String = NSStringFromClass(self.cellClass()!)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XRequestResult: NSObject {
+public class XRequestResult: NSObject {
     /// 请求成功，返回的证书数据
     var data : Any?
     

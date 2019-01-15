@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XInsetLabel: UILabel {
+open class XInsetLabel: UILabel {
     
     var insets = UIEdgeInsets.zero
     /*
@@ -19,11 +19,11 @@ class XInsetLabel: UILabel {
     }
     */
     
-    override func drawText(in rect: CGRect) {
+    override open func drawText(in rect: CGRect) {
         super.drawText(in: rect.inset(by: self.insets));
     }
     
-    override var intrinsicContentSize: CGSize {
+    override open var intrinsicContentSize: CGSize {
         var size = super.intrinsicContentSize
         
         size.width += (self.insets.left+self.insets.right)

@@ -17,16 +17,16 @@ enum ActionType : Int {
     case View
 }
 
-class XSimpleTableViewVC: XTableViewVC {
+open class XSimpleTableViewVC: XTableViewVC {
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.rowHeight = 60
         // Do any additional setup after loading the view.
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "Cell");
         
         if cell == nil {

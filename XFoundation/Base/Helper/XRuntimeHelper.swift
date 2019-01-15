@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XRuntimeHelper: NSObject {
+public class XRuntimeHelper: NSObject {
     
     static func instanceForClassName(_ className : String) -> AnyObject {
         let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String

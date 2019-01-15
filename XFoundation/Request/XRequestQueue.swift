@@ -45,7 +45,7 @@ protocol XRequestQueueDelegate : class {
     func allRequestFinished(queue:XRequestQueue)
 }
 
-class XRequestQueue: NSObject {
+public class XRequestQueue: NSObject {
     
     /// 名称，可以用来取分队列
     var name: String?

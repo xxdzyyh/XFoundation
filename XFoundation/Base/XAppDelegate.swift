@@ -9,7 +9,7 @@
 import UIKit
 import Bugly
 
-class XAppDelegate: UIResponder,UIApplicationDelegate {
+public class XAppDelegate: UIResponder,UIApplicationDelegate {
 
     var window: UIWindow?
        

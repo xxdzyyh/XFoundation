@@ -80,6 +80,7 @@
 		D468CDFD218855C0003BE1D5 /* XSimpleTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSimpleTableViewVC.swift; sourceTree = "<group>"; };
 		D468CDFF21895163003BE1D5 /* XDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDateExtension.swift; sourceTree = "<group>"; };
 		D468CE012189540F003BE1D5 /* DateExDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExDemoVC.swift; sourceTree = "<group>"; };
+		D4740A4A21ED7650004002F2 /* XFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundation.h; sourceTree = "<group>"; };
 		D478F81121927FF500021B89 /* XColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XColorExtension.swift; sourceTree = "<group>"; };
 		D4854785218AE1C5001B490B /* XTopTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
 		D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDemoVC.swift; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 		D4599C36217821A6001819A4 /* XFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				D4740A4921ED70C2004002F2 /* Header */,
 				D4854784218AE199001B490B /* View */,
 				D468CDFA218842A5003BE1D5 /* Demo */,
 				D44B2A19217D63D1009A84B6 /* Request */,
@@ -225,6 +227,14 @@
 				D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		D4740A4921ED70C2004002F2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D4740A4A21ED7650004002F2 /* XFoundation.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		D4854784218AE199001B490B /* View */ = {

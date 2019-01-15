@@ -15,7 +15,7 @@ import UIKit
     @objc optional func topTabBarDidSelectedItemAtIndex(topTabBar: XTopTabBar,index: Int)
 }
 
-class XTopTabBar: UIView,UIScrollViewDelegate {
+public class XTopTabBar: UIView,UIScrollViewDelegate {
     
     weak var delegate: XTopTabBarDelegate? {
         didSet {

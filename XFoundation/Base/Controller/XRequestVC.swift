@@ -12,7 +12,7 @@ import SVProgressHUD
 import SnapKit
 
 /// 和网络请求有关的试图控制器的基类
-class XRequestVC: XBaseVC, XRequestQueueDelegate {
+open class XRequestVC: XBaseVC, XRequestQueueDelegate {
 
     /**
         将请求放到这个队列，可以自动显示/隐藏 Loading
@@ -30,7 +30,7 @@ class XRequestVC: XBaseVC, XRequestQueueDelegate {
      */
     var otherQueue : XRequestQueue  = XRequestQueue.init(name: "otherQueue")
  
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.mainQueue.delegate = self

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XLoadingView: XTipView {
+public class XLoadingView: XTipView {
 
     var indicatorView = UIActivityIndicatorView.init(style: .gray)
     
@@ -29,7 +29,7 @@ class XLoadingView: XTipView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func didMoveToSuperview() {
+    override public func didMoveToSuperview() {
         super.didMoveToSuperview()
         
         if (self.superview != nil) {

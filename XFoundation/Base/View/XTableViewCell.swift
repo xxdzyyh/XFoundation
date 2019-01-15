@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XTableViewCell: UITableViewCell {
+public class XTableViewCell: UITableViewCell {
 
     var data : Any?
     

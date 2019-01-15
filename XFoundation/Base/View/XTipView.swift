@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 /// 各种提示
-class XTipView: UIView {
+public class XTipView: UIView {
 
     var title : String?
     var image : String?

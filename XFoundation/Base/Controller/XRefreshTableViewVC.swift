@@ -8,7 +8,7 @@
 import UIKit
 import MJRefresh
 
-class XRefreshTableViewVC: XTableViewVC {
+open class XRefreshTableViewVC: XTableViewVC {
 
     var refreshHeader: MJRefreshHeader?
     var refreshFooter: MJRefreshFooter?
@@ -65,7 +65,7 @@ class XRefreshTableViewVC: XTableViewVC {
         }
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.canAppend = true
