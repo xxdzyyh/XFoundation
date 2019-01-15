@@ -46,7 +46,9 @@ Pod::Spec.new do |s|
     spec.source_files = 'XFoundation/App/*'
   end
 
+  s.dependency 'Bugly'
   s.dependency 'MJRefresh'
+
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 
