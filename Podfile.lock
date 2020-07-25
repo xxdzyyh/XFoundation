@@ -49,6 +49,7 @@ PODS:
   - SDWebImage/Core (4.4.2)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.5)
+  - SwiftTryCatch (0.0.1)
   - TZImagePickerController (3.3.2)
   - UMengAnalytics-NO-IDFA (4.2.5)
   - URLNavigator (2.3.0)
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SnapKit
   - SVProgressHUD
+  - SwiftTryCatch
   - TZImagePickerController
   - UMengAnalytics-NO-IDFA
   - URLNavigator
@@ -102,6 +104,7 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - SVProgressHUD
+    - SwiftTryCatch
     - TZImagePickerController
     - UMengAnalytics-NO-IDFA
     - URLNavigator
@@ -130,10 +133,11 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftTryCatch: fb6d2b34abe48efd69578dac919293a44f95b481
   TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: 77ae16d332e766cf38b10ab908e2cb5db801e1a0
+PODFILE CHECKSUM: e531cae6dae3645d6c3272aca15e18da0d80e59d
 
 COCOAPODS: 1.9.3

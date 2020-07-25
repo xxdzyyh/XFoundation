@@ -11,6 +11,6 @@ class XBaseCollectionViewCell: UICollectionViewCell {
     var data : Any?
     
     func config(model:Any) {
-        
+        self.data = model
     }
 }

@@ -57,4 +57,5 @@ target 'XFoundation' do
    
    pod 'KakaJSON'
    
+   pod 'SwiftTryCatch'
 end

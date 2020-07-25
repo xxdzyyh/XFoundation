@@ -59,6 +59,7 @@
 		FEF64CEC24CAF6EF00DD0D30 /* XImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CCA24CAF6EF00DD0D30 /* XImagePicker.m */; };
 		FEF6509924CBC3AE00DD0D30 /* UITableViewCell+XF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6509824CBC3AE00DD0D30 /* UITableViewCell+XF.swift */; };
 		FEF6509B24CBC5CC00DD0D30 /* UICollectionViewCell+XF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6509A24CBC5CC00DD0D30 /* UICollectionViewCell+XF.swift */; };
+		FEF6551224CC10440006C5EB /* CollectionViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF6551124CC10440006C5EB /* CollectionViewDemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		FEF64CCA24CAF6EF00DD0D30 /* XImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XImagePicker.m; sourceTree = "<group>"; };
 		FEF6509824CBC3AE00DD0D30 /* UITableViewCell+XF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+XF.swift"; sourceTree = "<group>"; };
 		FEF6509A24CBC5CC00DD0D30 /* UICollectionViewCell+XF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+XF.swift"; sourceTree = "<group>"; };
+		FEF6551124CC10440006C5EB /* CollectionViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 				D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */,
 				D468CE012189540F003BE1D5 /* DateExDemoVC.swift */,
 				D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */,
+				FEF6551124CC10440006C5EB /* CollectionViewDemoVC.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				FEF64CCB24CAF6EF00DD0D30 /* XEmptyCollectionCell.swift in Sources */,
 				FEF64CD424CAF6EF00DD0D30 /* XBaseTableVC.swift in Sources */,
 				FEF64CDB24CAF6EF00DD0D30 /* Double+NotRouding.swift in Sources */,
+				FEF6551224CC10440006C5EB /* CollectionViewDemoVC.swift in Sources */,
 				D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */,
 				FEF6509924CBC3AE00DD0D30 /* UITableViewCell+XF.swift in Sources */,
 				FEF64CD524CAF6EF00DD0D30 /* XBaseCollectionVC.swift in Sources */,

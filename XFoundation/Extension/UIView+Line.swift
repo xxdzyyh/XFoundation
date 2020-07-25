@@ -20,6 +20,16 @@ extension UIView {
     ///   - ignoreIfExist: 相同位置如果已经存在XLineView，忽略本次添加
     func addLine(position:XLinePostion = .bottom,lineColor:UIColor = UIColor.white,startInsert:CGFloat = 0,endInsert:CGFloat = 0,lineWidth:CGFloat = 1,isOnePixelWidth:Bool = false,ignoreIfExist:Bool = true) {
         
+        if self.autoresizesSubviews == false {
+            #if DEBUG
+            fatalError("autoresizesSubviews为false会导致添加的线显示异常")
+            #else
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            print("autoresizesSubviews为false会导致添加的线显示异常，求求你了，这个必须处理")
+            #endif
+        }
+        
         let startTag = 5432
         if ignoreIfExist {
             let res = self.viewWithTag(startTag + position.rawValue)
@@ -33,17 +43,24 @@ extension UIView {
         switch position {
         case .top:
             rect = CGRect(x: 0, y: 0, width: self.width, height: lineWidth)
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth , UIView.AutoresizingMask.flexibleBottomMargin]
         case .bottom:
             rect = CGRect(x: 0, y: self.height-lineWidth, width: self.width, height: lineWidth)
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth , UIView.AutoresizingMask.flexibleTopMargin]
         case .left:
             rect = CGRect(x: 0, y: 0, width: lineWidth, height: self.height)
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight]
         case .right:
             rect = CGRect(x: self.width-lineWidth, y: 0, width: lineWidth, height: self.height)
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight]
         case .leftTopToRightBottom:
             rect = self.bounds
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight , UIView.AutoresizingMask.flexibleWidth]
         case .leftBottomToRightTop:
             rect = self.bounds
+            v.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight , UIView.AutoresizingMask.flexibleWidth]
         }
+        v.linePostion = position
         v.startInsert = startInsert
         v.endInsert = endInsert
         v.lineWidth = lineWidth

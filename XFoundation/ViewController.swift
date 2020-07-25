@@ -14,7 +14,9 @@ class ViewController: XDemoTableVC {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.dataSource = [[ActionKey.key:ActionType.ViewController,ActionKey.desc:"XTopTabBar",ActionKey.value:"TopTabBarDemoVC"]]
+        self.dataSource = [[ActionKey.key:ActionType.ViewController,ActionKey.desc:"XTopTabBar",ActionKey.value:"TopTabBarDemoVC"],
+                           [ActionKey.key:ActionType.ViewController,ActionKey.desc:"CollectionView",ActionKey.value:"CollectionViewDemoVC"]
+        ]
     }
 
 }

@@ -22,7 +22,7 @@ extension UIView {
     
     var width : CGFloat {
         get {
-            return self.bounds.size.height
+            return self.bounds.size.width
         }
         set {
             var rect = self.frame
