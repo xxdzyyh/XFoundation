@@ -14,10 +14,34 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Alamofire (5.2.1)
+  - AlamofireNetworkActivityIndicator (3.1.0):
+    - Alamofire (~> 5.1)
   - Bugly (2.5.0)
+  - HandyJSON (5.0.2)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - KakaJSON (1.1.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SAMKeychain (1.5.3)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.4.2):
@@ -25,44 +49,91 @@ PODS:
   - SDWebImage/Core (4.4.2)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.5)
+  - TZImagePickerController (3.3.2)
   - UMengAnalytics-NO-IDFA (4.2.5)
+  - URLNavigator (2.3.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire
+  - AlamofireNetworkActivityIndicator
   - Bugly
+  - HandyJSON
+  - IGListKit
+  - IQKeyboardManagerSwift
+  - KakaJSON
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - Moya/RxSwift
+  - R.swift
+  - RxCocoa
+  - RxSwift
+  - SAMKeychain
   - SDCycleScrollView
   - SnapKit
   - SVProgressHUD
+  - TZImagePickerController
   - UMengAnalytics-NO-IDFA
+  - URLNavigator
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
     - Bugly
+    - HandyJSON
+    - IGListDiffKit
+    - IGListKit
+    - IQKeyboardManagerSwift
+    - KakaJSON
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - Moya
+    - R.swift
+    - R.swift.Library
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SAMKeychain
     - SDCycleScrollView
     - SDWebImage
     - SnapKit
     - SVProgressHUD
+    - TZImagePickerController
     - UMengAnalytics-NO-IDFA
+    - URLNavigator
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: 58da0a31c471c8fdda727ca30667f5e27478e2e1
+PODFILE CHECKSUM: 77ae16d332e766cf38b10ab908e2cb5db801e1a0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.3

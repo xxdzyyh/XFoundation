@@ -164,7 +164,7 @@ public class XTopTabBar: UIView,UIScrollViewDelegate {
     /// 滑动scrollView的时候，同时滑动指示器
     ///
     /// - Parameter scrollView: 内容
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (scrollView == self.scrollView) {
             if scrollView.bounds.size.width == 0 {
                 return
@@ -182,7 +182,7 @@ public class XTopTabBar: UIView,UIScrollViewDelegate {
     }
     
     // 直接滑动scrollView会触发，setContentOffset: animated: 不会触发
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if (scrollView == self.scrollView) {
             let index = Int(scrollView.contentOffset.x/scrollView.bounds.size.width)
             

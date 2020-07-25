@@ -8,30 +8,3 @@
 
 import UIKit
 
-class RequestDemoVC: XRequestVC {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    override func sendRequest(_ queue: XRequestQueue) {
-    
-        XBaseRequest.domain = "http://www.baidu.com"
-        XTokenRequest.domain = "http://123.123.123.123:8080"
-        XBaseRequest.publicParameters = ["term" : "ios"]
-        
-        let req = XTokenRequest.path("/qd_api/api/guideInfo/open/login", completion:{(req,res) in 
-
-            print(res)
-        })
-        
-        req.addParameter(key: "tel", value: "15118174201")
-        req.addParameter(key: "password", value: "123456")
-        
-        queue.push(req)
-    }
-    
-    
-}

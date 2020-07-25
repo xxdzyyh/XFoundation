@@ -17,16 +17,16 @@ class DateExDemoVC: XBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let string = "2018-10-31 12:30:21"
-        let res = Date.stringToYearMonthDay(dateString: string)
-        
-        self.addLabel(text: "let string = \"2018-10-31 12:30:21\" \nDate.stringToYearMonthDay(dateString: string) \n\(res!)")
-        
-        let time2 = "2018-10-31 12:32:31"        
-        let date2 = Date.date(defaultFormatTime: time2)
-        let res2 = date2?.liveTimeAgo(time: string)
-        
-        self.addLabel(text: "let string = \"2018-10-31 12:30:21\" \nlet time2 = \"2018-10-31 12:32:31\"\nlet date2 = Date.date(defaultFormatTime: time2)\ndate2?.liveTimeAgo(time: string) \n\(res2!)")
+//        let string = "2018-10-31 12:30:21"
+//        let res = Date.stringToYearMonthDay(dateString: string)
+//        
+//        self.addLabel(text: "let string = \"2018-10-31 12:30:21\" \nDate.stringToYearMonthDay(dateString: string) \n\(res!)")
+//        
+//        let time2 = "2018-10-31 12:32:31"        
+//        let date2 = Date.date(defaultFormatTime: time2)
+//        let res2 = date2?.liveTimeAgo(time: string)
+//        
+//        self.addLabel(text: "let string = \"2018-10-31 12:30:21\" \nlet time2 = \"2018-10-31 12:32:31\"\nlet date2 = Date.date(defaultFormatTime: time2)\ndate2?.liveTimeAgo(time: string) \n\(res2!)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
