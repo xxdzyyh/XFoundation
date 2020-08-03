@@ -15,6 +15,10 @@ class CollectionViewDemoVC: XBaseCollectionVC {
 
         // Do any additional setup after loading the view.
         dataList = ["0","1","2","3","4","5","6"]
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.init(uptimeNanoseconds: 3)) {
+            self.collectionLayout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: 200)
+        }
     }
     
     
@@ -25,7 +29,19 @@ class CollectionViewDemoVC: XBaseCollectionVC {
         
         print(position)
         
-        cell.contentView.addLine(position:position, lineColor:.orange,lineWidth: 2)
+        if position == .left {
+            cell.contentView.addLine(position:position, lineColor:.orange, startInset: 10,endInset: 10, lineWidth: 2)
+            cell.contentView.addLine(position: .top, lineColor: UIColor.red,lineWidth: 10)
+            cell.contentView.addLine(position: .bottom, lineColor: UIColor.red,lineWidth: 10)
+        } else if position == .right {
+            
+            cell.contentView.addRightVerticalLine(rightInset: 20,lineColor: .yellow,lineWidth: 20)
+            cell.addLine(position:.right,lineColor: .systemPink, lineWidth: 20)
+            
+        } else {
+            cell.contentView.addLine(position:position, lineColor:.orange,lineWidth: 2)
+        }
+        
         cell.config(model: dataList[indexPath.row])
         
         return cell
