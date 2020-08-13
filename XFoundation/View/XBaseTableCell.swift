@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import RxSwift
 
+/// <#Description#>
 public class XBaseTableCell: UITableViewCell {
 
     var data : Any?
@@ -16,5 +18,16 @@ public class XBaseTableCell: UITableViewCell {
     
    func config(model:Any) {
         
+    }
+    
+    /// 避免重复注册监听
+    /// ViewController.swift
+    /// cell.button.rx.tap.asDriver().drive(onNext: { [weak se
+    ///     ...
+    /// })..disposed(by: cell.prepareForReuseDisposeBag)
+    var prepareForReuseDisposeBag = DisposeBag()
+    public override func prepareForReuse() {
+        super.prepareForReuse()
+        prepareForReuseDisposeBag = DisposeBag()
     }
 }
