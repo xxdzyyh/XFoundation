@@ -24,6 +24,11 @@
 		D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */; };
 		D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CE012189540F003BE1D5 /* DateExDemoVC.swift */; };
 		D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */; };
+		FEC61C6A24E4E3E400D14F12 /* XDataRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6924E4E3E400D14F12 /* XDataRefreshProtocol.swift */; };
+		FEC61C6D24E4EA9900D14F12 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6C24E4EA9900D14F12 /* ActivityIndicator.swift */; };
+		FEC61C6F24E4ED4300D14F12 /* XResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6E24E4ED4300D14F12 /* XResponseModel.swift */; };
+		FEC61C7124E551F800D14F12 /* TwoButtonSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C7024E551F800D14F12 /* TwoButtonSegmentControl.swift */; };
+		FEC61C7324E5523500D14F12 /* TwoButtonSegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C7224E5523500D14F12 /* TwoButtonSegmentVC.swift */; };
 		FEF64CCB24CAF6EF00DD0D30 /* XEmptyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CA424CAF6EE00DD0D30 /* XEmptyCollectionCell.swift */; };
 		FEF64CCC24CAF6EF00DD0D30 /* XEmptyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF64CA524CAF6EE00DD0D30 /* XEmptyCollectionCell.xib */; };
 		FEF64CCD24CAF6EF00DD0D30 /* XTopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CA624CAF6EE00DD0D30 /* XTopTabBar.swift */; };
@@ -35,10 +40,6 @@
 		FEF64CD324CAF6EF00DD0D30 /* XDemoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CAD24CAF6EE00DD0D30 /* XDemoTableVC.swift */; };
 		FEF64CD424CAF6EF00DD0D30 /* XBaseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CAE24CAF6EE00DD0D30 /* XBaseTableVC.swift */; };
 		FEF64CD524CAF6EF00DD0D30 /* XBaseCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CAF24CAF6EE00DD0D30 /* XBaseCollectionVC.swift */; };
-		FEF64CD624CAF6EF00DD0D30 /* XBaseIGSingleSectionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB124CAF6EE00DD0D30 /* XBaseIGSingleSectionListVC.swift */; };
-		FEF64CD724CAF6EF00DD0D30 /* XBaseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB224CAF6EE00DD0D30 /* XBaseSectionModel.swift */; };
-		FEF64CD824CAF6EF00DD0D30 /* XBaseSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB324CAF6EE00DD0D30 /* XBaseSectionController.swift */; };
-		FEF64CD924CAF6EF00DD0D30 /* XBaseIGListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB424CAF6EE00DD0D30 /* XBaseIGListVC.swift */; };
 		FEF64CDA24CAF6EF00DD0D30 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB624CAF6EE00DD0D30 /* NSObject+ClassName.swift */; };
 		FEF64CDB24CAF6EF00DD0D30 /* Double+NotRouding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB724CAF6EE00DD0D30 /* Double+NotRouding.swift */; };
 		FEF64CDC24CAF6EF00DD0D30 /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CB824CAF6EE00DD0D30 /* String+Common.swift */; };
@@ -86,6 +87,11 @@
 		D468CE012189540F003BE1D5 /* DateExDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExDemoVC.swift; sourceTree = "<group>"; };
 		D4740A4A21ED7650004002F2 /* XFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundation.h; sourceTree = "<group>"; };
 		D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDemoVC.swift; sourceTree = "<group>"; };
+		FEC61C6924E4E3E400D14F12 /* XDataRefreshProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDataRefreshProtocol.swift; sourceTree = "<group>"; };
+		FEC61C6C24E4EA9900D14F12 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		FEC61C6E24E4ED4300D14F12 /* XResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XResponseModel.swift; sourceTree = "<group>"; };
+		FEC61C7024E551F800D14F12 /* TwoButtonSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoButtonSegmentControl.swift; sourceTree = "<group>"; };
+		FEC61C7224E5523500D14F12 /* TwoButtonSegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonSegmentVC.swift; sourceTree = "<group>"; };
 		FEF64CA424CAF6EE00DD0D30 /* XEmptyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XEmptyCollectionCell.swift; sourceTree = "<group>"; };
 		FEF64CA524CAF6EE00DD0D30 /* XEmptyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XEmptyCollectionCell.xib; sourceTree = "<group>"; };
 		FEF64CA624CAF6EE00DD0D30 /* XTopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
@@ -97,10 +103,6 @@
 		FEF64CAD24CAF6EE00DD0D30 /* XDemoTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XDemoTableVC.swift; sourceTree = "<group>"; };
 		FEF64CAE24CAF6EE00DD0D30 /* XBaseTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseTableVC.swift; sourceTree = "<group>"; };
 		FEF64CAF24CAF6EE00DD0D30 /* XBaseCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseCollectionVC.swift; sourceTree = "<group>"; };
-		FEF64CB124CAF6EE00DD0D30 /* XBaseIGSingleSectionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseIGSingleSectionListVC.swift; sourceTree = "<group>"; };
-		FEF64CB224CAF6EE00DD0D30 /* XBaseSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseSectionModel.swift; sourceTree = "<group>"; };
-		FEF64CB324CAF6EE00DD0D30 /* XBaseSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseSectionController.swift; sourceTree = "<group>"; };
-		FEF64CB424CAF6EE00DD0D30 /* XBaseIGListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBaseIGListVC.swift; sourceTree = "<group>"; };
 		FEF64CB624CAF6EE00DD0D30 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		FEF64CB724CAF6EE00DD0D30 /* Double+NotRouding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+NotRouding.swift"; sourceTree = "<group>"; };
 		FEF64CB824CAF6EE00DD0D30 /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
@@ -190,9 +192,9 @@
 		D4599C36217821A6001819A4 /* XFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				FEC61C6B24E4EA8C00D14F12 /* Network */,
 				FEF64CAB24CAF6EE00DD0D30 /* Controller */,
 				FEF64CB524CAF6EE00DD0D30 /* Extension */,
-				FEF64CB024CAF6EE00DD0D30 /* IGListKitHelper */,
 				FEF64CC324CAF6EE00DD0D30 /* Tool */,
 				FEF64CA324CAF6EE00DD0D30 /* View */,
 				D4740A4921ED70C2004002F2 /* Header */,
@@ -223,6 +225,7 @@
 				D468CE012189540F003BE1D5 /* DateExDemoVC.swift */,
 				D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */,
 				FEF6551124CC10440006C5EB /* CollectionViewDemoVC.swift */,
+				FEC61C7224E5523500D14F12 /* TwoButtonSegmentVC.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -235,9 +238,19 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		FEC61C6B24E4EA8C00D14F12 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEC61C6C24E4EA9900D14F12 /* ActivityIndicator.swift */,
+				FEC61C6E24E4ED4300D14F12 /* XResponseModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FEF64CA324CAF6EE00DD0D30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEC61C7024E551F800D14F12 /* TwoButtonSegmentControl.swift */,
 				FEF64CA424CAF6EE00DD0D30 /* XEmptyCollectionCell.swift */,
 				FEF64CA524CAF6EE00DD0D30 /* XEmptyCollectionCell.xib */,
 				FEF64CA624CAF6EE00DD0D30 /* XTopTabBar.swift */,
@@ -256,19 +269,9 @@
 				FEF64CAD24CAF6EE00DD0D30 /* XDemoTableVC.swift */,
 				FEF64CAE24CAF6EE00DD0D30 /* XBaseTableVC.swift */,
 				FEF64CAF24CAF6EE00DD0D30 /* XBaseCollectionVC.swift */,
+				FEC61C6924E4E3E400D14F12 /* XDataRefreshProtocol.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		FEF64CB024CAF6EE00DD0D30 /* IGListKitHelper */ = {
-			isa = PBXGroup;
-			children = (
-				FEF64CB124CAF6EE00DD0D30 /* XBaseIGSingleSectionListVC.swift */,
-				FEF64CB224CAF6EE00DD0D30 /* XBaseSectionModel.swift */,
-				FEF64CB324CAF6EE00DD0D30 /* XBaseSectionController.swift */,
-				FEF64CB424CAF6EE00DD0D30 /* XBaseIGListVC.swift */,
-			);
-			path = IGListKitHelper;
 			sourceTree = "<group>";
 		};
 		FEF64CB524CAF6EE00DD0D30 /* Extension */ = {
@@ -421,15 +424,16 @@
 				FEF64CE624CAF6EF00DD0D30 /* NSObject+DisposeBag.swift in Sources */,
 				FEF64CDE24CAF6EF00DD0D30 /* String+Numbers.swift in Sources */,
 				FEF64CE924CAF6EF00DD0D30 /* ValidationService.swift in Sources */,
+				FEC61C6F24E4ED4300D14F12 /* XResponseModel.swift in Sources */,
 				D4599C4D21782288001819A4 /* App.swift in Sources */,
+				FEC61C7324E5523500D14F12 /* TwoButtonSegmentVC.swift in Sources */,
 				D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */,
-				FEF64CD924CAF6EF00DD0D30 /* XBaseIGListVC.swift in Sources */,
-				FEF64CD824CAF6EF00DD0D30 /* XBaseSectionController.swift in Sources */,
 				FEF64CCD24CAF6EF00DD0D30 /* XTopTabBar.swift in Sources */,
 				FEF64CEA24CAF6EF00DD0D30 /* ImagePicker.swift in Sources */,
 				FEF64CE324CAF6EF00DD0D30 /* UIView+Line.swift in Sources */,
 				FEF64CE024CAF6EF00DD0D30 /* String+Subscript.swift in Sources */,
 				D4599C3A217821A6001819A4 /* ViewController.swift in Sources */,
+				FEC61C6A24E4E3E400D14F12 /* XDataRefreshProtocol.swift in Sources */,
 				FEF64CCE24CAF6EF00DD0D30 /* XBaseTableCell.swift in Sources */,
 				FEF64CCF24CAF6EF00DD0D30 /* XLineView.swift in Sources */,
 				FEF64CDC24CAF6EF00DD0D30 /* String+Common.swift in Sources */,
@@ -437,16 +441,16 @@
 				FEF64CCB24CAF6EF00DD0D30 /* XEmptyCollectionCell.swift in Sources */,
 				FEF64CD424CAF6EF00DD0D30 /* XBaseTableVC.swift in Sources */,
 				FEF64CDB24CAF6EF00DD0D30 /* Double+NotRouding.swift in Sources */,
+				FEC61C6D24E4EA9900D14F12 /* ActivityIndicator.swift in Sources */,
 				FEF6551224CC10440006C5EB /* CollectionViewDemoVC.swift in Sources */,
 				D4599C38217821A6001819A4 /* AppDelegate.swift in Sources */,
 				FEF6509924CBC3AE00DD0D30 /* UITableViewCell+XF.swift in Sources */,
 				FEF64CD524CAF6EF00DD0D30 /* XBaseCollectionVC.swift in Sources */,
 				FEF64CDA24CAF6EF00DD0D30 /* NSObject+ClassName.swift in Sources */,
-				FEF64CD724CAF6EF00DD0D30 /* XBaseSectionModel.swift in Sources */,
+				FEC61C7124E551F800D14F12 /* TwoButtonSegmentControl.swift in Sources */,
 				FEF64CD324CAF6EF00DD0D30 /* XDemoTableVC.swift in Sources */,
 				D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */,
 				FEF64CE124CAF6EF00DD0D30 /* UIColor+Ext.swift in Sources */,
-				FEF64CD624CAF6EF00DD0D30 /* XBaseIGSingleSectionListVC.swift in Sources */,
 				D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */,
 				FEF64CDD24CAF6EF00DD0D30 /* UICollectionReusableView+Simple.swift in Sources */,
 				FEF64CD124CAF6EF00DD0D30 /* XEmptyCollectionReusableView.swift in Sources */,

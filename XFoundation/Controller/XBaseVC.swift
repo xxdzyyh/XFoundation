@@ -20,17 +20,17 @@ class XBaseVC: UIViewController {
         setupConstriants()
     }
     
-    // 设置subviews
+    /// 设置subviews
     func setupSubviews() {
         
     }
     
-    // 设置约束
+    /// 设置约束
     func setupConstriants() {
         
     }
     
-    // 界面基本都会发送一个请求
+    /// 界面基本都会发送一个请求
     func sendDefaultRequest() {
         
     }
