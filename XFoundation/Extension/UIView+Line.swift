@@ -13,6 +13,7 @@ extension UIView {
     /// 添加一条线,如果这个方法可以满足需求，优先使用这个方法
     /// - Parameters:
     ///   - position: 线的位置
+    ///   - lineColor: 线的颜色
     ///   - startInset: 起始内间距，默认0
     ///   - endInset: 结束内间距，默认0
     ///   - lineWidth: 线的宽，默认1pt

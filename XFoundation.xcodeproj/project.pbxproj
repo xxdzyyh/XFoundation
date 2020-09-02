@@ -24,11 +24,13 @@
 		D468CDFC218852A6003BE1D5 /* RequestDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CDFB218852A6003BE1D5 /* RequestDemoVC.swift */; };
 		D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D468CE012189540F003BE1D5 /* DateExDemoVC.swift */; };
 		D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */; };
+		FEC3E54124EB83100037B74C /* UIButton+ImagePostion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC3E54024EB83100037B74C /* UIButton+ImagePostion.swift */; };
 		FEC61C6A24E4E3E400D14F12 /* XDataRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6924E4E3E400D14F12 /* XDataRefreshProtocol.swift */; };
 		FEC61C6D24E4EA9900D14F12 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6C24E4EA9900D14F12 /* ActivityIndicator.swift */; };
 		FEC61C6F24E4ED4300D14F12 /* XResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C6E24E4ED4300D14F12 /* XResponseModel.swift */; };
 		FEC61C7124E551F800D14F12 /* TwoButtonSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C7024E551F800D14F12 /* TwoButtonSegmentControl.swift */; };
 		FEC61C7324E5523500D14F12 /* TwoButtonSegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC61C7224E5523500D14F12 /* TwoButtonSegmentVC.swift */; };
+		FEE34AC724FF75B60083FA26 /* XTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE34AC624FF75B60083FA26 /* XTheme.swift */; };
 		FEF64CCB24CAF6EF00DD0D30 /* XEmptyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CA424CAF6EE00DD0D30 /* XEmptyCollectionCell.swift */; };
 		FEF64CCC24CAF6EF00DD0D30 /* XEmptyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF64CA524CAF6EE00DD0D30 /* XEmptyCollectionCell.xib */; };
 		FEF64CCD24CAF6EF00DD0D30 /* XTopTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF64CA624CAF6EE00DD0D30 /* XTopTabBar.swift */; };
@@ -87,11 +89,13 @@
 		D468CE012189540F003BE1D5 /* DateExDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExDemoVC.swift; sourceTree = "<group>"; };
 		D4740A4A21ED7650004002F2 /* XFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundation.h; sourceTree = "<group>"; };
 		D4854787218BF0FB001B490B /* TopTabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarDemoVC.swift; sourceTree = "<group>"; };
+		FEC3E54024EB83100037B74C /* UIButton+ImagePostion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ImagePostion.swift"; sourceTree = "<group>"; };
 		FEC61C6924E4E3E400D14F12 /* XDataRefreshProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDataRefreshProtocol.swift; sourceTree = "<group>"; };
 		FEC61C6C24E4EA9900D14F12 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		FEC61C6E24E4ED4300D14F12 /* XResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XResponseModel.swift; sourceTree = "<group>"; };
 		FEC61C7024E551F800D14F12 /* TwoButtonSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoButtonSegmentControl.swift; sourceTree = "<group>"; };
 		FEC61C7224E5523500D14F12 /* TwoButtonSegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonSegmentVC.swift; sourceTree = "<group>"; };
+		FEE34AC624FF75B60083FA26 /* XTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XTheme.swift; sourceTree = "<group>"; };
 		FEF64CA424CAF6EE00DD0D30 /* XEmptyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XEmptyCollectionCell.swift; sourceTree = "<group>"; };
 		FEF64CA524CAF6EE00DD0D30 /* XEmptyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XEmptyCollectionCell.xib; sourceTree = "<group>"; };
 		FEF64CA624CAF6EE00DD0D30 /* XTopTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XTopTabBar.swift; sourceTree = "<group>"; };
@@ -258,6 +262,7 @@
 				FEF64CA824CAF6EE00DD0D30 /* XLineView.swift */,
 				FEF64CA924CAF6EE00DD0D30 /* XBaseCollectionViewCell.swift */,
 				FEF64CAA24CAF6EE00DD0D30 /* XEmptyCollectionReusableView.swift */,
+				FEE34AC624FF75B60083FA26 /* XTheme.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 		FEF64CB524CAF6EE00DD0D30 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FEC3E54024EB83100037B74C /* UIButton+ImagePostion.swift */,
 				FEF64CB624CAF6EE00DD0D30 /* NSObject+ClassName.swift */,
 				FEF64CB724CAF6EE00DD0D30 /* Double+NotRouding.swift */,
 				FEF64CB824CAF6EE00DD0D30 /* String+Common.swift */,
@@ -435,6 +441,7 @@
 				D4599C3A217821A6001819A4 /* ViewController.swift in Sources */,
 				FEC61C6A24E4E3E400D14F12 /* XDataRefreshProtocol.swift in Sources */,
 				FEF64CCE24CAF6EF00DD0D30 /* XBaseTableCell.swift in Sources */,
+				FEE34AC724FF75B60083FA26 /* XTheme.swift in Sources */,
 				FEF64CCF24CAF6EF00DD0D30 /* XLineView.swift in Sources */,
 				FEF64CDC24CAF6EF00DD0D30 /* String+Common.swift in Sources */,
 				FEF64CD224CAF6EF00DD0D30 /* XBaseVC.swift in Sources */,
@@ -452,6 +459,7 @@
 				D468CE022189540F003BE1D5 /* DateExDemoVC.swift in Sources */,
 				FEF64CE124CAF6EF00DD0D30 /* UIColor+Ext.swift in Sources */,
 				D4854788218BF0FB001B490B /* TopTabBarDemoVC.swift in Sources */,
+				FEC3E54124EB83100037B74C /* UIButton+ImagePostion.swift in Sources */,
 				FEF64CDD24CAF6EF00DD0D30 /* UICollectionReusableView+Simple.swift in Sources */,
 				FEF64CD124CAF6EF00DD0D30 /* XEmptyCollectionReusableView.swift in Sources */,
 				FEF64CEC24CAF6EF00DD0D30 /* XImagePicker.m in Sources */,

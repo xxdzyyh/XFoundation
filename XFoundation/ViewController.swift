@@ -14,6 +14,13 @@ class ViewController: XDemoTableVC {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+          
+          print(UIDevice.current.systemVersion)
+          print(UIApplication.shared.statusBarFrame)
+          print(UIApplication.shared.keyWindow?.safeAreaInsets ?? UIEdgeInsets.zero)
+          
+        
+        
         self.dataSource = [[ActionKey.key:ActionType.ViewController,ActionKey.desc:"XTopTabBar",ActionKey.value:"TopTabBarDemoVC"],
                            [ActionKey.key:ActionType.ViewController,ActionKey.desc:"CollectionView",ActionKey.value:"CollectionViewDemoVC"],
                            [ActionKey.key:ActionType.ViewController,ActionKey.desc:"TwoButtonSegment",ActionKey.value:"TwoButtonSegmentVC"],
