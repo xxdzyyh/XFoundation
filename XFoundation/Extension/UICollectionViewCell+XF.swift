@@ -26,7 +26,7 @@ extension UICollectionViewCell {
         }
     }
     
-    class func cell(for collectionView:UICollectionView, identifier:String? = nil, indexPath:IndexPath) -> UICollectionViewCell {
+    class func cell(for collectionView:UICollectionView, identifier:String? = nil, indexPath:IndexPath) -> Self {
         var reuseIdentifier = identifier
         if reuseIdentifier == nil {
            reuseIdentifier = self.className
@@ -58,6 +58,6 @@ extension UICollectionViewCell {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier!, for: indexPath)
         }, finally: nil)
         
-        return cell!
+        return cell as! Self
     }
 }

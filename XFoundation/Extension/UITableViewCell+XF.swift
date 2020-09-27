@@ -27,7 +27,7 @@ extension UITableViewCell {
         }
     }
 
-    class func cell(for tableView: UITableView, identifier:String? = nil) -> (UITableViewCell) {
+    class func cell(for tableView: UITableView, identifier:String? = nil) -> Self {
         var reuseIdentifier = identifier
         if reuseIdentifier == nil {
           reuseIdentifier = self.className
@@ -37,6 +37,6 @@ extension UITableViewCell {
             register(for: tableView, identifier: reuseIdentifier!)
             cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier!)
         }
-        return cell!
+        return cell as! Self
     }
 }

@@ -23,7 +23,7 @@ class CollectionViewDemoVC: XBaseCollectionVC {
     
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = XBaseCollectionViewCell.cell(for: collectionView, indexPath: indexPath) as! XBaseCollectionViewCell
+        let cell = XBaseCollectionViewCell.cell(for: collectionView, indexPath: indexPath)
         
         let position = XLinePostion.init(rawValue: indexPath.row) ?? .bottom
         
