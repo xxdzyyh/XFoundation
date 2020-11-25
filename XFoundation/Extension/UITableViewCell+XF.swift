@@ -10,12 +10,12 @@ import UIKit
 
 extension UITableViewCell {
     
-    // MARK: - 注册创建
+    /// 注册 cell
+    /// - Parameters:
+    ///   - tableView: 目标 tableView
+    ///   - identifier: 重用标志，可以不传
     class func register(for tableView:UITableView, identifier:String? = nil) {
-        var reuseIdentifier = identifier
-        if reuseIdentifier == nil {
-          reuseIdentifier = self.className
-        }
+        let reuseIdentifier = identifier == nil ? self.className : identifier
         let classBundle = Bundle.init(for: self)
         let path = classBundle .path(forResource: className, ofType: "nib")
         if (path != nil) {
@@ -28,10 +28,7 @@ extension UITableViewCell {
     }
 
     class func cell(for tableView: UITableView, identifier:String? = nil) -> Self {
-        var reuseIdentifier = identifier
-        if reuseIdentifier == nil {
-          reuseIdentifier = self.className
-        }
+        let reuseIdentifier = identifier == nil ? self.className : identifier
         var cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier!)
         if cell == nil {
             register(for: tableView, identifier: reuseIdentifier!)

@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+# source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 platform :ios, '10.0'
 
@@ -42,8 +42,6 @@ target 'XFoundation' do
 
    #网络请求活动指示器
    pod 'AlamofireNetworkActivityIndicator'
-
-   pod 'IGListKit'
 
    #路由
    pod 'URLNavigator'

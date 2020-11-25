@@ -20,7 +20,7 @@ class XBaseCollectionViewCell: UICollectionViewCell {
     /// cell.button.rx.tap.asDriver().drive(onNext: { [weak se
     ///     ...
     /// })..disposed(by: cell.prepareForReuseDisposeBag)
-    var prepareForReuseDisposeBag = DisposeBag()
+    lazy var prepareForReuseDisposeBag = DisposeBag()
     public override func prepareForReuse() {
         super.prepareForReuse()
         prepareForReuseDisposeBag = DisposeBag()

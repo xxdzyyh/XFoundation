@@ -33,7 +33,7 @@ class XBaseTableVC: XBaseVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = XBaseTableCell.cell(for: tableView) as! XBaseTableCell
+        let cell = XBaseTableCell.cell(for: tableView)
         cell.config(model: self.dataList[indexPath.row])
         return cell
     }

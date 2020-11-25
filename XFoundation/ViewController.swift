@@ -24,7 +24,6 @@ class ViewController: XDemoTableVC {
         self.dataSource = [[ActionKey.key:ActionType.ViewController,ActionKey.desc:"XTopTabBar",ActionKey.value:"TopTabBarDemoVC"],
                            [ActionKey.key:ActionType.ViewController,ActionKey.desc:"CollectionView",ActionKey.value:"CollectionViewDemoVC"],
                            [ActionKey.key:ActionType.ViewController,ActionKey.desc:"TwoButtonSegment",ActionKey.value:"TwoButtonSegmentVC"],
-                            [ActionKey.key:ActionType.ViewController,ActionKey.desc:"IGList Single Section",ActionKey.value:"SingleSectionDemoVC"]
                            
         ]
     }

@@ -19,9 +19,6 @@ PODS:
     - Alamofire (~> 5.1)
   - Bugly (2.5.0)
   - HandyJSON (5.0.2)
-  - IGListDiffKit (4.0.0)
-  - IGListKit (4.0.0):
-    - IGListDiffKit (= 4.0.0)
   - IQKeyboardManagerSwift (6.5.5)
   - KakaJSON (1.1.2)
   - Masonry (1.1.0)
@@ -60,7 +57,6 @@ DEPENDENCIES:
   - AlamofireNetworkActivityIndicator
   - Bugly
   - HandyJSON
-  - IGListKit
   - IQKeyboardManagerSwift
   - KakaJSON
   - Masonry
@@ -80,14 +76,12 @@ DEPENDENCIES:
   - URLNavigator
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  trunk:
     - AFNetworking
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - Bugly
     - HandyJSON
-    - IGListDiffKit
-    - IGListKit
     - IQKeyboardManagerSwift
     - KakaJSON
     - Masonry
@@ -115,8 +109,6 @@ SPEC CHECKSUMS:
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
-  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -138,6 +130,6 @@ SPEC CHECKSUMS:
   UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: e531cae6dae3645d6c3272aca15e18da0d80e59d
+PODFILE CHECKSUM: 3c7dc7f0a1eabf97ecee3627bf8b8d621d66b3e6
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
